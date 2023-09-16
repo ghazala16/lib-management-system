@@ -1,8 +1,10 @@
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -10,6 +12,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+
+
 
     public class LoginGUI {
     public static void main(String[] args) {
@@ -63,21 +67,27 @@ import javax.swing.JTextField;
                 return username.equals("ghazala")&& password.equals("password");
             }
         });
-
-
-
-
-
         frame.setVisible(true);
+
+
+
+        JLabel backgroundLabel=new JLabel();
+        setBackgroundImage(backgroundLabel,"background.jpg");
     }
 
-    // Implement your authentication logic here
-    private static boolean authenticate(String username, String password) {
-        // Replace this with your actual authentication logic
-        // For example, you can check credentials against a database
-        // For now, we'll assume a basic authentication
-        return username.equals("admin") && password.equals("password");
-    }
+
+
+
+
+
+    private static void setBackgroundImage(JLabel label, String imagePath) {
+    ImageIcon imageIcon = new ImageIcon(imagePath);
+    Image image = imageIcon.getImage().getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
+    label.setIcon(new ImageIcon(image));
+}
+
+
+    
 }
 
 
