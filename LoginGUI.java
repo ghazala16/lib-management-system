@@ -20,7 +20,7 @@ import javax.swing.JTextField;
 
 
         JFrame frame = new JFrame("Library Management System Login");
-        frame.setSize(400, 200);
+        frame.setSize(400, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
@@ -72,7 +72,9 @@ import javax.swing.JTextField;
 
 
         JLabel backgroundLabel=new JLabel();
-        setBackgroundImage(backgroundLabel,"background");
+        setBackgroundImage(backgroundLabel,"d:\\lib management system\\background.jpg");
+
+        
     }
 
 
@@ -81,7 +83,7 @@ import javax.swing.JTextField;
 
 
     private static void setBackgroundImage(JLabel label, String imagePath) {
-    ImageIcon imageIcon = new ImageIcon(imagePath);
+        ImageIcon imageIcon = new ImageIcon("d:\\lib management system\\background.jpg");
     Image image = imageIcon.getImage().getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
     label.setIcon(new ImageIcon(image));
 }
