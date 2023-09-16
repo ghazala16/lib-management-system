@@ -72,7 +72,7 @@ import javax.swing.JTextField;
 
 
         JLabel backgroundLabel=new JLabel();
-        setBackgroundImage(backgroundLabel,"d:\\lib management system\\background.jpg");
+        setBackgroundImage(backgroundLabel,"C:\\Users\\DELL\\Documents\\GitHub\\lib-management-system\\background.jpg");
 
         
     }
@@ -83,7 +83,7 @@ import javax.swing.JTextField;
 
 
     private static void setBackgroundImage(JLabel label, String imagePath) {
-        ImageIcon imageIcon = new ImageIcon("d:\\lib management system\\background.jpg");
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\DELL\\Documents\\GitHub\\lib-management-system\\background.jpg");
     Image image = imageIcon.getImage().getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
     label.setIcon(new ImageIcon(image));
 }
