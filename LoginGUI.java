@@ -72,7 +72,7 @@ import javax.swing.JTextField;
 
 
         JLabel backgroundLabel=new JLabel();
-        setBackgroundImage(backgroundLabel,"background.jpg");
+        setBackgroundImage(backgroundLabel,"background");
     }
 
 
@@ -85,9 +85,6 @@ import javax.swing.JTextField;
     Image image = imageIcon.getImage().getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
     label.setIcon(new ImageIcon(image));
 }
-
-
-    
 }
 
 
